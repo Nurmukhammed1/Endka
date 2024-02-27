@@ -1,13 +1,20 @@
+package Payment;
+
+import java.util.Scanner;
+
 public class PaymentByPayPal implements PaymentStrategy
 {
     private String email;
     private String password;
+    Scanner scanner = new Scanner(System.in);
 
     @Override
     public void collectPaymentDetails()
     {
-        email = "PayPal Mail";
-        password = "PayPal Password";
+        System.out.println("Enter email: ");
+        email = scanner.nextLine();
+        System.out.println("Enter password: ");
+        password = scanner.nextLine();
         System.out.println("Collecting PayPal Account Details...");
     }
 

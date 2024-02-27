@@ -1,3 +1,5 @@
+package Payment;
+
 public interface PaymentStrategy
 {
     void collectPaymentDetails();
