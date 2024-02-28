@@ -26,7 +26,7 @@ public class Launch {
                     ResultSet.CONCUR_UPDATABLE);
 
             // Выполнение запроса к базе данных, получение набора данных
-            ResultSet table = statement.executeQuery("SELECT * FROM contacts");
+            ResultSet table = statement.executeQuery("SELECT * FROM users");
 
             table.first(); // Выведем имена полей
             for (int j = 1; j <= table.getMetaData().getColumnCount(); j++) {

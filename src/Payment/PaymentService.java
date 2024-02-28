@@ -6,7 +6,7 @@ import Payment.PaymentByPayPal;
 public class PaymentService
 {
 
-    private int cost = 100;
+    private int cost;
     private boolean includeDelivery;
 
     private PaymentStrategy strategy;
@@ -28,7 +28,7 @@ public class PaymentService
 
     private int getTotal()
     {
-        return includeDelivery ? cost + 10 : cost;
+        return includeDelivery ? cost + 1000 : cost;
     }
 
     public void setStrategy(PaymentByCreditCard byCard)

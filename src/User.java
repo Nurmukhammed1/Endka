@@ -10,11 +10,11 @@ public class User {
     private String email;
     private String password;
 
-    public User(String name, String email, String password) throws Exception {
+    public User(String name, String email, String password) throws Exception
+    {
         this.name = name;
         this.email = email;
         this.password = password;
         userdb.createUser(name, email, password, conn);
     }
-
 }
