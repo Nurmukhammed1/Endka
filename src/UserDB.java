@@ -22,7 +22,7 @@ public class UserDB
         {
             if (rs.getString("email").equals(email) && rs.getString("password").equals(password))
             {
-                System.out.println("Success! Welcome back!");
+                System.out.println("Success!");
                 return true;
             }
         }

@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class PaymentByCreditCard implements PaymentStrategy
 {
-    private int amount = 15000;
     private String number;
     private String date;
     private String cvv;
@@ -35,8 +34,7 @@ public class PaymentByCreditCard implements PaymentStrategy
     @Override
     public void pay(int amount)
     {
-        System.out.println("Paying " + amount + " using Credit Card");
-        this.amount = this.amount - amount;
+        System.out.println("Paying using Credit Card");
     }
 
 }
